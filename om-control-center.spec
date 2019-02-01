@@ -1,13 +1,13 @@
 Name:		om-control-center
-Version:	0.0.3
-Release:	2
+Version:	0.1.0
+Release:	1
 Summary:	OpenMandriva Lx Control Center
 License:	GPLv2
 Group:		System/Configuration/Other
 URL:		https://github.com/OpenMandrivaAssociation/om-control-center
-Source0:	https://github.com/OpenMandrivaSoftware/om-control-center/archive/%{name}-%{version}.tar.gz
+Source0:	https://github.com/OpenMandrivaSoftware/om-control-center/archive/%{version}.tar.gz
 Requires:	kdialog
-Requires:	htmlscript
+Requires:	htmlscript >= 1.0.1
 BuildRequires:	make
 BuildArch:	noarch
 
@@ -27,7 +27,6 @@ OpenMandriva Lx Control Center.
 %find_lang om-control-center
 
 %files -f om-control-center.lang
-%{_bindir}/om-cc-launcher
 %{_bindir}/om-control-center
 %{_datadir}/%{name}/*
 %{_datadir}/applications/om-control-center.desktop
