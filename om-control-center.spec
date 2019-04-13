@@ -23,7 +23,7 @@ OpenMandriva Lx Control Center.
 # Nothing to do here...
 
 %install
-%makeinstall
+%make_install
 
 %find_lang om-control-center
 
