@@ -1,11 +1,11 @@
 Name:		om-control-center
-Version:	0.1.8
+Version:	0.1.9
 Release:	1
 Summary:	OpenMandriva Lx Control Center
 License:	GPLv2
 Group:		System/Configuration/Other
 URL:		https://github.com/OpenMandrivaAssociation/om-control-center
-Source0:	https://github.com/OpenMandrivaSoftware/om-control-center/releases/%{name}-%{version}.tar.gz
+Source0:	https://github.com/OpenMandrivaSoftware/om-control-center/archive/%{version}/%{name}-%{version}.tar.gz
 Requires:	kdialog
 Requires:	dnf-plugins-core
 Requires:	htmlscript >= 1.0.1
@@ -27,7 +27,11 @@ OpenMandriva Lx Control Center.
 
 %find_lang om-control-center
 
+mkdir -p %{buildroot}%{_datadir}/icons/
+cp om-cc.svg %{buildroot}%{_datadir}/icons/
+
 %files -f om-control-center.lang
 %{_bindir}/om-control-center
 %{_datadir}/%{name}/*
 %{_datadir}/applications/om-control-center.desktop
+%{_datadir}/icons/om-cc.svg
