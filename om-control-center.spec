@@ -1,5 +1,5 @@
 Name:		om-control-center
-Version:	0.1.10
+Version:	0.1.11
 Release:	1
 Summary:	OpenMandriva Lx Control Center
 License:	GPLv2
