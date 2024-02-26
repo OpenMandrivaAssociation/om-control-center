@@ -1,12 +1,12 @@
 Name:		om-control-center
 Version:	0.2.19
-Release:	1
+Release:	2
 Summary:	OpenMandriva Lx Control Center
 License:	GPLv2
 Group:		System/Configuration/Other
 URL:		https://github.com/OpenMandrivaAssociation/om-control-center
 Source0:	https://github.com/OpenMandrivaSoftware/om-control-center/archive/%{version}/%{name}-%{version}.tar.gz
-Requires:	kdialog
+Requires:	(kdialog or plasma6-kdialog)
 Requires:	dnf-plugins-core
 Requires:	htmlscript >= 1.0.1
 BuildRequires:	make
@@ -16,8 +16,7 @@ BuildArch:	noarch
 OpenMandriva Lx Control Center.
 
 %prep
-%setup -q
-%autopatch -p1
+%autosetup -p1
 
 %build
 # Nothing to do here...
