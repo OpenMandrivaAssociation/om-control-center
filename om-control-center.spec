@@ -9,6 +9,7 @@ Source0:	https://github.com/OpenMandrivaSoftware/om-control-center/archive/%{ver
 Requires:	(kdialog or plasma6-kdialog)
 Requires:	dnf-plugins-core
 Requires:	htmlscript >= 1.0.1
+BuildRequires:	gettext
 BuildRequires:	make
 BuildArch:	noarch
 
